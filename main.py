@@ -14,4 +14,3 @@ lista2=[]
 for x in lista:
     lista2.append(x['title'])
 print(lista2)
-

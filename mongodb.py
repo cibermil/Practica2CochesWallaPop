@@ -1,4 +1,3 @@
-
 from pymongo.mongo_client import MongoClient
 import os
 import dotenv
@@ -9,7 +8,6 @@ dotenv.load_dotenv()
 # leemos las varaibles de entorno
 usuario = os.getenv('USR_MONGO')
 passwd = os.getenv('PSW_MONGO')
-
 
 uri = f"mongodb+srv://{usuario}:{passwd}@cluster0.lbxiwj7.mongodb.net/?retryWrites=true&w=majority"
 # Create a new client and connect to the server

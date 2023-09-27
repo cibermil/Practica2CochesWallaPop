@@ -18,18 +18,15 @@ for x in busqueda:
 lista2=[]
 for x in lista: #Por último extraemos los datos relevantes del vehículo
     lista2.append(x['title'])
-
+    descripcion=x['title']
+    anio=x['year']
 
 print(lista2)
 datos_vehiculo={
-        "modelo_vehiculo": x['title'],
-        "precio": str(['price']) + x['currency'],
-        "año":x['year'],
-        "transmision":x['gearbox'],
-        "motor":x['horsepower'],
-        "recorrido":x['km'],
-        "ubicacion":x['location']
+    "des_vehiculo":descripcion,
+    "año_vehiculo":anio
 }
 
 #Lo guardamos en la base de datos
 #_ = client.get_database('tratamientodatos').get_collection('trabajo_final').insert_one(document=datos_vehiculo)
+

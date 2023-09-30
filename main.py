@@ -2,7 +2,7 @@
 
 import requests
 from mongodb import client
-import datetime
+
 
 url="https://api.wallapop.com/api/v3/cars/search?keywords=coches&category_ids=100&filters_source=search_box&longitude=-3.69196&latitude=40.41956"
 user_agent = {'User-agent': 'Mozilla/5.0'}
@@ -18,15 +18,20 @@ for x in busqueda:
 lista2=[]
 for x in lista: #Por último extraemos los datos relevantes del vehículo
     lista2.append(x['title'])
-    descripcion=x['title']
-    anio=x['year']
+    datos_vehiculo = {
+        "modelo_vehiculo": x['title'],
+        "precio": str(x['price']) + " - "+ x['currency'],
+        "año": x['year'],
+        "transmision": x['gearbox'],
+        "motor": x['horsepower'],
+        "recorrido": x['km'],
+        "ubicacion": x['location'],
+        "imagen": x['images'][0]['medium']
+    }
+    # Lo guardamos en la base de datos
+    _ = client.get_database('tratamientodatos').get_collection('work_final').insert_one(document=datos_vehiculo)
+#print(datos_vehiculo)
 
-print(lista2)
-datos_vehiculo={
-    "des_vehiculo":descripcion,
-    "año_vehiculo":anio
-}
 
-#Lo guardamos en la base de datos
-#_ = client.get_database('tratamientodatos').get_collection('trabajo_final').insert_one(document=datos_vehiculo)
+
 

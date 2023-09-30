@@ -21,8 +21,7 @@ se pudo encontar que utilizaba APIs, y de esta manera se procedio a consumir est
 ### 2. Método extracción de datos:
     Mediante la libreria REQUEST, se realiza la captura de los datos en formato JSON
     y con la exploración de esta estructura se extraen los datos.
-
-![](C:\Users\Inscripcion2\Desktop\Untitled-2023-09-08-2026.png)
+![img_1.png](img_1.png)
 
 ### 3. Programación del aplicativo para extraer los datos de la API:
 Utilizando el lenguaje de programación Python y algunas librerias contenidas en el

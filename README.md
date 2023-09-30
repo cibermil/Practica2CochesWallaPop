@@ -22,7 +22,8 @@ se pudo encontar que utilizaba APIs, y de esta manera se procedio a consumir est
     Mediante la libreria REQUEST, se realiza la captura de los datos en formato JSON
     y con la exploración de esta estructura se extraen los datos.
 
-![Untitled-2023-09-08-2026.png](..%2F..%2FDesktop%2FUntitled-2023-09-08-2026.png)
+![](C:\Users\Inscripcion2\Desktop\Untitled-2023-09-08-2026.png)
+
 ### 3. Programación del aplicativo para extraer los datos de la API:
 Utilizando el lenguaje de programación Python y algunas librerias contenidas en el
 archivo requeriments con el siguiente contenido:

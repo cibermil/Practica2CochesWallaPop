@@ -28,8 +28,11 @@ Utilizando el lenguaje de programación Python y algunas librerias contenidas en
 archivo *requeriments.txt* con el siguiente contenido:
 
 - **requests==2.31.0**
-- **pymongo==4.5.0**
+- **pymongo==4.5.0
 - **python-dotenv==1.0.0**
+
+**Instalación de la librerias**
+pip install -r requeriments.txt
  
 Los módulos necesarios para el funcionamiento de la aplicación son: 
 - **main.py** .- Módulo principal y de inicio se utilizan las librerias de *requests* y la referenciación de la API

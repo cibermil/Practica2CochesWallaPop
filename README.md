@@ -25,7 +25,7 @@ se pudo encontar que utilizaba APIs, y de esta manera se procedio a consumir est
 
 ### 3. Programación del aplicativo para extraer los datos de la API:
 Utilizando el lenguaje de programación Python y algunas librerias contenidas en el
-archivo requeriments con el siguiente contenido:
+archivo *requeriments.txt* con el siguiente contenido:
 
 - **requests==2.31.0**
 - **pymongo==4.5.0**
@@ -33,5 +33,18 @@ archivo requeriments con el siguiente contenido:
  
 Los módulos necesarios para el funcionamiento de la aplicación son: 
 - **main.py** .- Módulo principal y de inicio se utilizan las librerias de *requests* y la referenciación de la API
-  se extraer los datos en formato JSON, se identifica los keys de los datos requeridos, para este caso:
-- 
+  se extraer los datos en formato JSON, se identifica los keys de los datos requeridos, para este caso: 
+  La estructura extraida es la siguiente:
+
+  ![img_2.png](img_2.png)
+- **mongodb.py** .- Establece la conexión con la base de datos MongoDB, la configuración
+  necesaria requerida es crear una variable de entorno *".env"* que contiene lo datos de usuario, contraseña y el host de conexión.
+
+  **USR_MONGO=** Nombre de usuario de la colección de datos de MongoDB
+  **PSW_MONGO=** Contraseña establecida
+
+### 4. Almacenado de los datos extraidos:
+  La siguiente imágen demuestra la grabación de los datos en MongoDB, en la base de datos *tratamientodatos* y la
+  colección *work_final*
+  
+![img_3.png](img_3.png)

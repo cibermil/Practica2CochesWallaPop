@@ -1,6 +1,15 @@
 # Practica2CochesWallaPop
 Seleccionar Coches de WallaPop
 
+![imguide.png](imguide.png)
+
+### Maestria: Ciber Seguridad
+### Módulo: Tratamiento de Datos
+### Docente: Rafael Nogales
+### Realizado por: Milton Vintimilla Barzallo
+
+**********************************************************
+
 ## Extracción de datos:
 ### Selección del objetivo
 En primera instacia se determinó el interés sobre un tema en particular, que fue el análisis de el mercado de vehículos usados, se estableció una portal web dedicado al comercio como WALLAPOP
@@ -26,6 +35,9 @@ se pudo encontar que utilizaba APIs, y de esta manera se procedio a consumir est
 ### 3. Programación del aplicativo para extraer los datos de la API:
 Utilizando el lenguaje de programación Python y algunas librerias contenidas en el
 archivo *requeriments.txt* con el siguiente contenido:
+
+Instalación de liberias
+pip install -r requirements.txt
 
 - **requests==2.31.0**
 - **pymongo==4.5.0
